@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Hotel - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <img src="../assets/images/delight.png" alt="Delight Hotel">
+                    <h1>Delight Hotel</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <button><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="images/avatar.jpg" alt="Admin">
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-menu">
+                <ul>
+                    <li class="menu-item active" data-page="dashboard">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="menu-item" data-page="reservations">
+                        <a href="#">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Reservations</span>
+                            <span class="badge">12</span>
+                        </a>
+                    </li>
+                    <li class="menu-item" data-page="rooms">
+                        <a href="#">
+                            <i class="fas fa-bed"></i>
+                            <span>Rooms</span>
+                        </a>
+                    </li>
+                    <li class="menu-item" data-page="guests">
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span>Guests</span>
+                        </a>
+                    </li>
+                    <li class="menu-item" data-page="analytics">
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content - Default Dashboard -->
+        <main class="dashboard-content" id="content-container">
+            <!-- Dashboard Content -->
+            <div class="page-content" id="dashboard-content">
+                <div class="content-header">
+                    <h2>Dashboard Overview</h2>
+                    <div class="breadcrumb">
+                        <span>Home</span>
+                    </div>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>42</h3>
+                            <p>Today's Check-ins</p>
+                        </div>
+                    </div>
+                    <!-- Other stat cards... -->
+                </div>
+            </div>
+
+            <!-- Reservations Content (Hidden by default) -->
+            <div class="page-content" id="reservations-content" style="display:none">
+                <div class="content-header">
+                    <h2>Reservations</h2>
+                    <div class="breadcrumb">
+                        <span>Home</span> / <span>Reservations</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>All Reservations</h3>
+                        <button class="btn btn-primary">Add Reservation</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="reservations-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Guest</th>
+                                        <th>Room</th>
+                                        <th>Check-In</th>
+                                        <th>Check-Out</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#1245</td>
+                                        <td>John Smith</td>
+                                        <td>Deluxe Suite</td>
+                                        <td>Jun 15, 2023</td>
+                                        <td>Jun 20, 2023</td>
+                                        <td><span class="badge bg-green">Confirmed</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline">View</button>
+                                        </td>
+                                    </tr>
+                                    <!-- More reservation rows... -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rooms Content (Hidden by default) -->
+            <div class="page-content" id="rooms-content" style="display:none">
+                <div class="content-header">
+                    <h2>Room Management</h2>
+                    <div class="breadcrumb">
+                        <span>Home</span> / <span>Rooms</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>All Rooms</h3>
+                        <button class="btn btn-primary">Add Room</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="reservations-table">
+                                <thead>
+                                    <tr>
+                                        <th>Room No.</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th>Rate</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>101</td>
+                                        <td>Deluxe Suite</td>
+                                        <td><span class="badge bg-green">Available</span></td>
+                                        <td>$199/night</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline">Edit</button>
+                                        </td>
+                                    </tr>
+                                    <!-- More room rows... -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guests Content (Hidden by default) -->
+            <div class="page-content" id="guests-content" style="display:none">
+                <div class="content-header">
+                    <h2>Guest Management</h2>
+                    <div class="breadcrumb">
+                        <span>Home</span> / <span>Guests</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>All Guests</h3>
+                        <button class="btn btn-primary">Add Guest</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="reservations-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Last Stay</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#G1001</td>
+                                        <td>John Smith</td>
+                                        <td>john@example.com</td>
+                                        <td>+1 555-123-4567</td>
+                                        <td>Jun 15, 2023</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline">View</button>
+                                        </td>
+                                    </tr>
+                                    <!-- More guest rows... -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Content (Hidden by default) -->
+            <div class="page-content" id="analytics-content" style="display:none">
+                <div class="content-header">
+                    <h2>Analytics Dashboard</h2>
+                    <div class="breadcrumb">
+                        <span>Home</span> / <span>Analytics</span>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>$24,580</h3>
+                            <p>Monthly Revenue</p>
+                        </div>
+                    </div>
+                    <!-- More stat cards... -->
+                </div>
+                
+                <div class="content-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Occupancy Rate</h3>
+                            <select class="form-control form-control-sm">
+                                <option>Last 30 Days</option>
+                                <option>Last 90 Days</option>
+                            </select>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="occupancyChart" height="250"></canvas>
+                        </div>
+                    </div>
+                    <!-- More analytics cards... -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sidebar navigation
+            const menuItems = document.querySelectorAll('.menu-item');
+            const contentContainer = document.getElementById('content-container');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all items
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                    
+                    // Get which page to show
+                    const page = this.getAttribute('data-page');
+                    
+                    // Hide all content divs
+                    document.querySelectorAll('.page-content').forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    
+                    // Show the selected content
+                    document.getElementById(`${page}-content`).style.display = 'block';
+                    
+                    // Close sidebar on mobile
+                    if (window.innerWidth <= 992) {
+                        document.querySelector('.dashboard-sidebar').classList.remove('mobile-show');
+                    }
+                });
+            });
+            
+            // Mobile menu toggle
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.dashboard-sidebar').classList.toggle('mobile-show');
+            });
+        });
+    </script>
+</body>
+</html>

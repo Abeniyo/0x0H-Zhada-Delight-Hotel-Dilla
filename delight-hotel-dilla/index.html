@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delight Hotel Dilla - Luxury accommodations with modern amenities">
+    <meta name="keywords" content="hotel, booking, Dilla, Ethiopia, luxury, chapa payment">
+    <title>Delight Hotel Dilla </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index-animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/images/delight.png" alt="Delight Hotel Logo">
+                    <span>Delight Hotel</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="#booking" class="btn btn-primary">Book Now</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Experience Luxury in Dilla</h1>
+                <p class="hero-subtitle">Book your perfect stay with instant confirmation and secure online payment</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary">Reserve Now</a>
+                    <a href="#virtual-tour" class="btn btn-outline">Virtual Tour</a>
+                </div>
+                
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Booking Widget -->
+    <section class="booking-widget" id="booking">
+        <div class="container">
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="check-in"><i class="fas fa-calendar-alt"></i> Check In</label>
+                    <input type="date" id="check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out"><i class="fas fa-calendar-alt"></i> Check Out</label>
+                    <input type="date" id="check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests"><i class="fas fa-user-friends"></i> Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="4+">4+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Rooms & Suites</h2>
+                <p>Designed for your comfort and relaxation</p>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="assets/images/hotel.jpg" alt="Standard Room">
+                    <div class="room-info">
+                        <h3>Standard Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 Queen Bed</span>
+                            <span><i class="fas fa-user"></i> 2 Guests</span>
+                            <span><i class="fas fa-ruler-combined"></i> 28m²</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">$85/night</span>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="assets/images/hotel.jpg" alt="Deluxe Room">
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 King Bed</span>
+                            <span><i class="fas fa-user"></i> 2 Guests</span>
+                            <span><i class="fas fa-ruler-combined"></i> 35m²</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">$120/night</span>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="assets/images/hotel.jpg" alt="Executive Suite">
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 King Bed + Sofa</span>
+                            <span><i class="fas fa-user"></i> 4 Guests</span>
+                            <span><i class="fas fa-ruler-combined"></i> 55m²</span>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">$200/night</span>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section" id="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hotel Amenities</h2>
+                <p>Everything you need for a perfect stay</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free High-Speed WiFi</h3>
+                    <p>Stay connected with our complimentary high-speed internet access throughout the hotel.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Swimming Pool</h3>
+                    <p>Relax in our outdoor swimming pool with panoramic views of Dilla.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant & Bar</h3>
+                    <p>Enjoy local and international cuisine at our on-site restaurant and bar.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Rejuvenate with our range of spa treatments and massage therapies.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Center</h3>
+                    <p>Maintain your workout routine in our fully equipped fitness center.</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Secure parking available for all our guests at no additional cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section class="dining-section" id="dining">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dining Experience</h2>
+                <p>Discover our culinary offerings</p>
+            </div>
+            <div class="dining-carousel">
+                <div class="dining-item">
+                    <img src="assets/images/hotel.jpg" alt="Main Restaurant">
+                    <div class="dining-info">
+                        <h3>Savanna Restaurant</h3>
+                        <p>International buffet breakfast and à la carte dining with local flavors</p>
+                        <span class="opening-hours"><i class="fas fa-clock"></i> 6:30 AM - 10:30 PM</span>
+                    </div>
+                </div>
+                <div class="dining-item">
+                    <img src="assets/images/hotel.jpg" alt="Hotel Bar">
+                    <div class="dining-info">
+                        <h3>Jasmine Lounge</h3>
+                        <p>Cocktails, fine wines, and light snacks in a relaxed atmosphere</p>
+                        <span class="opening-hours"><i class="fas fa-clock"></i> 11:00 AM - 1:00 AM</span>
+                    </div>
+                </div>
+                <div class="dining-item">
+                    <img src="assets/images/hotel.jpg" alt="Coffee Shop">
+                    <div class="dining-info">
+                        <h3>Kafa Coffee Corner</h3>
+                        <p>Premium Ethiopian coffee and fresh pastries</p>
+                        <span class="opening-hours"><i class="fas fa-clock"></i> 7:00 AM - 9:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-content">
+                <div class="payment-info">
+                    <h2>Secure Online Payment</h2>
+                    <p>Book with confidence using our secure payment system powered by Chapa. We accept all major credit cards and mobile payments.</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check-circle"></i> Instant booking confirmation</li>
+                        <li><i class="fas fa-check-circle"></i> No hidden fees</li>
+                        <li><i class="fas fa-check-circle"></i> Free cancellation (48h notice)</li>
+                        <li><i class="fas fa-check-circle"></i> Best price guarantee</li>
+                    </ul>
+                </div>
+                <div class="payment-image">
+                    <img src="images/payment-methods.png" alt="Payment Methods">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Guest Reviews</h2>
+                <p>What our guests say about us</p>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The rooms were spacious and clean, the staff was incredibly helpful, and the location was perfect for exploring Dilla. Will definitely stay here again!"</p>
+                    <div class="guest-info">
+                        <img src="assets/images/hotel.jpg" alt="Guest 1">
+                        <div>
+                            <h4>Mensur Jemal</h4>
+                            <span>From Addis Ababa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The online booking was seamless and the payment through Chapa was very secure. The hotel exceeded our expectations in every way."</p>
+                    <div class="guest-info">
+                        <img src="assets/images/hotel.jpg" alt="Guest 2">
+                        <div>
+                            <h4>Sarah Williams</h4>
+                            <span>From Nairobi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to help</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Main Street from Addis Ababa to Moyale, Dilla, Ethiopia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+251 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@delighthoteldilla.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="assets/images/delight.png" alt="Delight Hotel Logo">
+                        <span>Delight Hotel Dilla</span>
+                    </div>
+                    <p>Experience luxury and comfort in the heart of Dilla. Book your stay with us today and enjoy world-class hospitality.</p>
+                    
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Delight Hotel Dilla. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

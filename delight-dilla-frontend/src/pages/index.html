@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delight Hotel Dilla | Luxury Stay in Ethiopia</title>
+  <link rel="stylesheet" href="../../dist/styles.css" />
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <i class="fas fa-hotel text-2xl text-blue-600 mr-2"></i>
+        <h1 class="text-2xl font-bold text-blue-800">Delight Hotel Dilla</h1>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="font-medium hover:text-blue-600">Home</a>
+        <a href="#rooms" class="font-medium hover:text-blue-600">Rooms</a>
+        <a href="#amenities" class="font-medium hover:text-blue-600">Amenities</a>
+        <a href="#contact" class="font-medium hover:text-blue-600">Contact</a>
+      </nav>
+      <button class="md:hidden text-gray-600">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen flex items-center justify-center bg-blue-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="bg-[url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center absolute inset-0"></div>
+    <div class="container mx-auto px-6 z-10 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Experience Luxury in Dilla</h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Your perfect getaway with stunning views, premium amenities, and unmatched hospitality.</p>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+        Book Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Rooms & Suites</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Room Card 1 -->
+        <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Deluxe Room" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
+            <p class="text-gray-600 mb-4">Spacious comfort with modern amenities and scenic views.</p>
+            <span class="text-blue-600 font-bold">From $120/night</span>
+          </div>
+        </div>
+        <!-- Room Card 2 -->
+        <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Executive Suite" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Executive Suite</h3>
+            <p class="text-gray-600 mb-4">Luxury living with a separate lounge and premium services.</p>
+            <span class="text-blue-600 font-bold">From $220/night</span>
+          </div>
+        </div>
+        <!-- Room Card 3 -->
+        <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+          <img src="https://images.unsplash.com/photo-1566669437685-6e6c0f64046a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Presidential Suite" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Presidential Suite</h3>
+            <p class="text-gray-600 mb-4">Ultimate luxury with panoramic views and personalized service.</p>
+            <span class="text-blue-600 font-bold">From $350/night</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section id="amenities" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Amenities</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-swimming-pool text-4xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold mb-2">Infinity Pool</h3>
+          <p class="text-gray-600">Stunning views while you relax.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-utensils text-4xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold mb-2">Fine Dining</h3>
+          <p class="text-gray-600">Gourmet Ethiopian & international cuisine.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-spa text-4xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold mb-2">Spa & Wellness</h3>
+          <p class="text-gray-600">Rejuvenate with our luxury treatments.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-wifi text-4xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold mb-2">High-Speed WiFi</h3>
+          <p class="text-gray-600">Seamless connectivity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-800 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready for an Unforgettable Stay?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Book now and enjoy exclusive early-bird discounts!</p>
+      <button class="bg-white text-blue-800 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+        Reserve Your Room
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Delight Hotel Dilla</h3>
+          <p class="text-gray-400">Luxury redefined in the heart of Ethiopia.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#rooms" class="text-gray-400 hover:text-white">Rooms</a></li>
+            <li><a href="#amenities" class="text-gray-400 hover:text-white">Amenities</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><i class="fas fa-map-marker-alt mr-2"></i> Dilla, Ethiopia</li>
+            <li><i class="fas fa-phone mr-2"></i> +251 123 456 789</li>
+            <li><i class="fas fa-envelope mr-2"></i> info@delighthoteldilla.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-gray-700 my-8">
+      <p class="text-center text-gray-400">&copy; 2025 Delight Hotel Dilla. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
